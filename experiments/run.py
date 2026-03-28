@@ -95,7 +95,7 @@ def run_all_experiments(
         result = run_experiment(n,
                                 d,
                                 num_runs=num_runs,
-                                run_normal=((n - d) < 10) and (n <= 12))
+                                run_normal=((n - d) < 10))
         results.append(result)
 
     results.sort(key=lambda x: (x["n"], x["d"]))
